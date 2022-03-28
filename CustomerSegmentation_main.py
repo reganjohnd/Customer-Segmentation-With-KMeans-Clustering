@@ -28,7 +28,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv('G:\My Drive\DANIELS ECOSYSTEM\extracurricularActivities\DataScience\Projects\CustomerSegmentation\dataset-customerSegmentation.csv')
+df = pd.read_csv('customerSegmentation.csv')
 
 ### Univariate analysis - one variable
 
@@ -151,7 +151,7 @@ plt.figure(figsize = (10, 8))
 plt.scatter(data = centers, x = 'x', y = 'y', s = 100, c = 'black', marker = '*')
 sns.scatterplot(data = df, x = 'Annual Income (k$)', y = 'Spending Score (1-100)', hue = 'Spending and Income Cluster', palette = 'tab10')
 plt.show()
-plt.savefig('G:\My Drive\DANIELS ECOSYSTEM\extracurricularActivities\DataScience\Projects\CustomerSegmentation\ClusteringImage.png')
+plt.savefig('ClusteringImage.png')
 
 ## Gender split by cluster
 gender_by_cluster = pd.crosstab(df['Spending and Income Cluster'], df['Gender'], normalize = 'index')
