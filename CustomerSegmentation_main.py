@@ -189,6 +189,7 @@ for i in range(1, 11):
 plt.plot(range(1, 11), inertia_score3)
 plt.show()
 
+### I still need to complete the Multivariate analysis
 
 
 
